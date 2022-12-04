@@ -1,6 +1,34 @@
-# 数据集介绍
+# 文件介绍
 
-## 一、鸢尾花（for 分类树）
+## 一、文件
+
+```
+./
+│  boston_house_prices.xml（SPSS 导出的决策树 XML 数据文件。使用波士顿房价数据，for 回归树。）
+│  boston_house_prices__output.html（本程序包导出的可视化 HTML 文件。使用波士顿房价数据，for 回归树。）
+│  boston_house_prices__output.json（本程序包导出的决策树模型信息 JSON文件。使用波士顿房价数据，for 回归树。）
+│  boston_house_prices__spss_export_html_example.png（HTML 中决策树示例截图）
+│  boston_house_prices__spss_export_xml_example.png（SPSS 中决策树示例截图示例截图）
+│  
+│  iris.xml（SPSS 导出的决策树 XML 数据文件。使用鸢尾花分类数据， for 分类树。）
+│  iris__output.html（本程序包导出的可视化 HTML。使用鸢尾花分类数据， for 分类树。）
+│  iris__output.json（本程序包导出的决策树模型信息。使用鸢尾花分类数据， for 分类树。）
+│  iris__spss_export_xml_example.png
+│  README.md
+│
+└─data_for_spss（原始数据）
+        boston_house_prices.sav
+        boston_house_prices.xlsx
+        iris.sav
+        iris.spv
+        iris.xlsx
+```
+
+
+
+## 二、数据集介绍
+
+### 2.1 鸢尾花（for 分类树）
 
 **Data Set Characteristics:**
 
@@ -61,7 +89,7 @@ latter are NOT linearly separable from each other.
      conceptual clustering system finds 3 classes in the data.
    - Many, many more ...
 
-## 二、波士顿房价（for 回归树）
+### 2.2 波士顿房价（for 回归树）
 
 **Data Set Characteristics:**  
 
