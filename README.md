@@ -12,6 +12,8 @@
 - ② 鼠标指向节点，显著节点信息与分类条件。
 - ③ 点击节点，保存节点信息与分类条件，并标记被点击的节点。
 
+测试数据与导出结果存放于目录 `./data_for_testing` 中。
+
 <img src="data_for_testing/boston_house_prices__spss_export_html_example.png" alt="boston_house_prices__spss_export_html_example" style="zoom:50%;" />
 
 ## 二、使用示例
@@ -70,34 +72,32 @@ e.save_json('data_for_testing/iris__output.json')
 e.save_html('data_for_testing/iris__output.html')
 ```
 
-
-
-## 三、SPSS 决策树的 XML 文件结构
+## 附录 SPSS 决策树的 XML 文件结构
 
 在 SPSS 决策树导出的 XML 文件中，主要结构如下：
 
+```
 * Header（SPSS信息）
 * DataDictionary（字段信息）
 * TreeModel（树模型信息）
-	* Extension（扩展，头部）
-		* X-risk
-		* X-seOfRisk
-	* Extension（扩展，尾部）
-		* X-TreeModel
+  * Extension（扩展，头部）
+    * X-risk
+    * X-seOfRisk
+  * Extension（扩展，尾部）
+    * X-TreeModel
+      * X-Priors
+  * MiningSchema（挖掘概况）
+    * MiningField（使用的字段）
+  * ModelStats（模型统计）
+    * UnivariateStats...（单变量统计）
+  * Node（节点树）
+    * Extension
+      * X-Node
 
-			* X-Priors
-	* MiningSchema（挖掘概况）
-
-		* MiningField（使用的字段）
-	* ModelStats（模型统计）
-		* UnivariateStats...（单变量统计）
-	* Node（节点树）
-		* Extension
-			* X-Node
-
-				* X-NodeStats（仅对分类型，有P值、卡方值、自由度）
-				* X-RegInfo（仅对连续型，有均值和标准差）
-		* CompoundPredicate（拆分条件）
-		* ScoreDistribution...（该节点得分分布：分类型为）
-		* Node...（子节点）
+        * X-NodeStats（仅对分类型，有P值、卡方值、自由度）
+        * X-RegInfo（仅对连续型，有均值和标准差）
+    * CompoundPredicate（拆分条件）
+    * ScoreDistribution...（该节点得分分布：分类型为）
+    * Node...（子节点）
+```
 
