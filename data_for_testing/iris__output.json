@@ -1,0 +1,1057 @@
+{
+    "spss_info": {
+        "spss_version": "26.0.0.0"
+    },
+    "tree_info": {
+        "algorithm": "CHAID",
+        "function": "classification",
+        "field_usage_type": {
+            "花瓣宽度cm": "active",
+            "萼片宽度cm": "active",
+            "花瓣长度cm": "active",
+            "萼片长度cm": "active",
+            "结果": "predicted"
+        }
+    },
+    "y_name": "结果",
+    "y_class_cnt": 3,
+    "y_class_dict": {
+        "山鸢尾": 0,
+        "彩虹鸢尾": 1,
+        "维吉尼亚鸢尾": 2
+    },
+    "sample_cnt": 150,
+    "node_info": {
+        "0": {
+            "id": "0",
+            "level": 0,
+            "pid": "",
+            "pid_list": [],
+            "cid_list": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "reg_info": {},
+            "node_stats": {
+                "adjPValue": "4.75967387732713e-051",
+                "chiSquare": "258.699665551839",
+                "df1": "6"
+            },
+            "node_count": 150,
+            "node_ratio_in_all": 1.0,
+            "node_score": "山鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 50,
+                    "ratio_in_node": 0.3333333333333333
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 50,
+                    "ratio_in_node": 0.3333333333333333
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 50,
+                    "ratio_in_node": 0.3333333333333333
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 0,
+                "left_position": 0.0,
+                "right_position": 1.0,
+                "width": 1.0,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.3333333333333333,
+                        "sub_height": 0.3333333333333333,
+                        "sub_cnt": 50
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.3333333333333333,
+                        "sub_top": 0.6666666666666666,
+                        "sub_height": 0.3333333333333333,
+                        "sub_cnt": 50
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.6666666666666667,
+                        "sub_top": 1.0,
+                        "sub_height": 0.3333333333333333,
+                        "sub_cnt": 50
+                    }
+                ],
+                "y_reg": {},
+                "condition": "",
+                "all_condition": ""
+            }
+        },
+        "1": {
+            "id": "1",
+            "level": 1,
+            "pid": "0",
+            "pid_list": [
+                "0"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 48,
+            "node_ratio_in_all": 0.32,
+            "node_score": "山鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 48,
+                    "ratio_in_node": 1.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 1,
+                "left_position": 0.0,
+                "right_position": 0.32,
+                "width": 0.32,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 48
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣宽度cm∈(-∞,0.4]",
+                "all_condition": "【花瓣宽度cm∈(-∞,0.4]】"
+            }
+        },
+        "2": {
+            "id": "2",
+            "level": 1,
+            "pid": "0",
+            "pid_list": [
+                "0"
+            ],
+            "cid_list": [
+                "5",
+                "6"
+            ],
+            "reg_info": {},
+            "node_stats": {
+                "adjPValue": "2.5922778346965e-007",
+                "chiSquare": "30",
+                "df1": "1"
+            },
+            "node_count": 30,
+            "node_ratio_in_all": 0.2,
+            "node_score": "彩虹鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 2,
+                    "ratio_in_node": 0.06666666666666667
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 28,
+                    "ratio_in_node": 0.9333333333333333
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 1,
+                "left_position": 0.32,
+                "right_position": 0.52,
+                "width": 0.2,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.06666666666666667,
+                        "sub_height": 0.06666666666666667,
+                        "sub_cnt": 2
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.06666666666666665,
+                        "sub_top": 1.0,
+                        "sub_height": 0.9333333333333333,
+                        "sub_cnt": 28
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣宽度cm∈(0.4,1.3]",
+                "all_condition": "【花瓣宽度cm∈(0.4,1.3]】"
+            }
+        },
+        "5": {
+            "id": "5",
+            "level": 2,
+            "pid": "2",
+            "pid_list": [
+                "0",
+                "2"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 28,
+            "node_ratio_in_all": 0.18666666666666668,
+            "node_score": "彩虹鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 28,
+                    "ratio_in_node": 1.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 2,
+                "left_position": 0.32000000000000006,
+                "right_position": 0.5066666666666667,
+                "width": 0.18666666666666668,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 28
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    }
+                ],
+                "y_reg": {},
+                "condition": "萼片宽度cm∈(-∞,3]",
+                "all_condition": "【花瓣宽度cm∈(0.4,1.3]】&【萼片宽度cm∈(-∞,3]】"
+            }
+        },
+        "6": {
+            "id": "6",
+            "level": 2,
+            "pid": "2",
+            "pid_list": [
+                "0",
+                "2"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 2,
+            "node_ratio_in_all": 0.013333333333333334,
+            "node_score": "山鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 2,
+                    "ratio_in_node": 1.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 2,
+                "left_position": 0.5066666666666667,
+                "right_position": 0.52,
+                "width": 0.013333333333333334,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 2
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    }
+                ],
+                "y_reg": {},
+                "condition": "萼片宽度cm∈(3,+∞)",
+                "all_condition": "【花瓣宽度cm∈(0.4,1.3]】&【萼片宽度cm∈(3,+∞)】"
+            }
+        },
+        "3": {
+            "id": "3",
+            "level": 1,
+            "pid": "0",
+            "pid_list": [
+                "0"
+            ],
+            "cid_list": [
+                "7",
+                "8"
+            ],
+            "reg_info": {},
+            "node_stats": {
+                "adjPValue": "0.00465122067170656",
+                "chiSquare": "11.2996825396825",
+                "df1": "1"
+            },
+            "node_count": 26,
+            "node_ratio_in_all": 0.17333333333333334,
+            "node_score": "彩虹鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 21,
+                    "ratio_in_node": 0.8076923076923077
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 5,
+                    "ratio_in_node": 0.19230769230769232
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 1,
+                "left_position": 0.52,
+                "right_position": 0.6933333333333334,
+                "width": 0.17333333333333334,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.8076923076923077,
+                        "sub_height": 0.8076923076923077,
+                        "sub_cnt": 21
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.8076923076923077,
+                        "sub_top": 1.0,
+                        "sub_height": 0.19230769230769232,
+                        "sub_cnt": 5
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣宽度cm∈(1.3,1.7]",
+                "all_condition": "【花瓣宽度cm∈(1.3,1.7]】"
+            }
+        },
+        "7": {
+            "id": "7",
+            "level": 2,
+            "pid": "3",
+            "pid_list": [
+                "0",
+                "3"
+            ],
+            "cid_list": [
+                "11",
+                "12"
+            ],
+            "reg_info": {},
+            "node_stats": {
+                "adjPValue": "6.19537314483533e-005",
+                "chiSquare": "20",
+                "df1": "1"
+            },
+            "node_count": 20,
+            "node_ratio_in_all": 0.13333333333333333,
+            "node_score": "彩虹鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 19,
+                    "ratio_in_node": 0.95
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 1,
+                    "ratio_in_node": 0.05
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 2,
+                "left_position": 0.52,
+                "right_position": 0.6533333333333333,
+                "width": 0.13333333333333333,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.95,
+                        "sub_height": 0.95,
+                        "sub_cnt": 19
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.95,
+                        "sub_top": 1.0,
+                        "sub_height": 0.05,
+                        "sub_cnt": 1
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣长度cm∈(-∞,4.9]",
+                "all_condition": "【花瓣宽度cm∈(1.3,1.7]】&【花瓣长度cm∈(-∞,4.9]】"
+            }
+        },
+        "11": {
+            "id": "11",
+            "level": 3,
+            "pid": "7",
+            "pid_list": [
+                "0",
+                "3",
+                "7"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 1,
+            "node_ratio_in_all": 0.006666666666666667,
+            "node_score": "维吉尼亚鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 1,
+                    "ratio_in_node": 1.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 3,
+                "left_position": 0.52,
+                "right_position": 0.5266666666666667,
+                "width": 0.006666666666666667,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 1
+                    }
+                ],
+                "y_reg": {},
+                "condition": "萼片长度cm∈(-∞,5]",
+                "all_condition": "【花瓣宽度cm∈(1.3,1.7]】&【花瓣长度cm∈(-∞,4.9]】&【萼片长度cm∈(-∞,5]】"
+            }
+        },
+        "12": {
+            "id": "12",
+            "level": 3,
+            "pid": "7",
+            "pid_list": [
+                "0",
+                "3",
+                "7"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 19,
+            "node_ratio_in_all": 0.12666666666666668,
+            "node_score": "彩虹鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 19,
+                    "ratio_in_node": 1.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 3,
+                "left_position": 0.5266666666666667,
+                "right_position": 0.6533333333333334,
+                "width": 0.12666666666666668,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 19
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    }
+                ],
+                "y_reg": {},
+                "condition": "萼片长度cm∈(5,+∞)",
+                "all_condition": "【花瓣宽度cm∈(1.3,1.7]】&【花瓣长度cm∈(-∞,4.9]】&【萼片长度cm∈(5,+∞)】"
+            }
+        },
+        "8": {
+            "id": "8",
+            "level": 2,
+            "pid": "3",
+            "pid_list": [
+                "0",
+                "3"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 6,
+            "node_ratio_in_all": 0.04,
+            "node_score": "维吉尼亚鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 2,
+                    "ratio_in_node": 0.3333333333333333
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 4,
+                    "ratio_in_node": 0.6666666666666666
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 2,
+                "left_position": 0.6533333333333333,
+                "right_position": 0.6933333333333334,
+                "width": 0.04,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.3333333333333333,
+                        "sub_height": 0.3333333333333333,
+                        "sub_cnt": 2
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.33333333333333337,
+                        "sub_top": 1.0,
+                        "sub_height": 0.6666666666666666,
+                        "sub_cnt": 4
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣长度cm∈(4.9,+∞)",
+                "all_condition": "【花瓣宽度cm∈(1.3,1.7]】&【花瓣长度cm∈(4.9,+∞)】"
+            }
+        },
+        "4": {
+            "id": "4",
+            "level": 1,
+            "pid": "0",
+            "pid_list": [
+                "0"
+            ],
+            "cid_list": [
+                "9",
+                "10"
+            ],
+            "reg_info": {},
+            "node_stats": {
+                "adjPValue": "0.0271214034627571",
+                "chiSquare": "6.81481481481481",
+                "df1": "1"
+            },
+            "node_count": 46,
+            "node_ratio_in_all": 0.30666666666666664,
+            "node_score": "维吉尼亚鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 1,
+                    "ratio_in_node": 0.021739130434782608
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 45,
+                    "ratio_in_node": 0.9782608695652174
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 1,
+                "left_position": 0.6933333333333334,
+                "right_position": 1.0,
+                "width": 0.30666666666666664,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.021739130434782608,
+                        "sub_height": 0.021739130434782608,
+                        "sub_cnt": 1
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.021739130434782594,
+                        "sub_top": 1.0,
+                        "sub_height": 0.9782608695652174,
+                        "sub_cnt": 45
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣宽度cm∈(1.7,+∞)",
+                "all_condition": "【花瓣宽度cm∈(1.7,+∞)】"
+            }
+        },
+        "9": {
+            "id": "9",
+            "level": 2,
+            "pid": "4",
+            "pid_list": [
+                "0",
+                "4"
+            ],
+            "cid_list": [
+                "13",
+                "14"
+            ],
+            "reg_info": {},
+            "node_stats": {
+                "adjPValue": "0.0429176353062896",
+                "chiSquare": "6",
+                "df1": "1"
+            },
+            "node_count": 6,
+            "node_ratio_in_all": 0.04,
+            "node_score": "维吉尼亚鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 1,
+                    "ratio_in_node": 0.16666666666666666
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 5,
+                    "ratio_in_node": 0.8333333333333334
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 2,
+                "left_position": 0.6933333333333334,
+                "right_position": 0.7333333333333334,
+                "width": 0.04,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.16666666666666666,
+                        "sub_height": 0.16666666666666666,
+                        "sub_cnt": 1
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.16666666666666663,
+                        "sub_top": 1.0,
+                        "sub_height": 0.8333333333333334,
+                        "sub_cnt": 5
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣长度cm∈(-∞,4.9]",
+                "all_condition": "【花瓣宽度cm∈(1.7,+∞)】&【花瓣长度cm∈(-∞,4.9]】"
+            }
+        },
+        "13": {
+            "id": "13",
+            "level": 3,
+            "pid": "9",
+            "pid_list": [
+                "0",
+                "4",
+                "9"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 5,
+            "node_ratio_in_all": 0.03333333333333333,
+            "node_score": "维吉尼亚鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 5,
+                    "ratio_in_node": 1.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 3,
+                "left_position": 0.6933333333333334,
+                "right_position": 0.7266666666666667,
+                "width": 0.03333333333333333,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 5
+                    }
+                ],
+                "y_reg": {},
+                "condition": "萼片宽度cm∈(-∞,3]",
+                "all_condition": "【花瓣宽度cm∈(1.7,+∞)】&【花瓣长度cm∈(-∞,4.9]】&【萼片宽度cm∈(-∞,3]】"
+            }
+        },
+        "14": {
+            "id": "14",
+            "level": 3,
+            "pid": "9",
+            "pid_list": [
+                "0",
+                "4",
+                "9"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 1,
+            "node_ratio_in_all": 0.006666666666666667,
+            "node_score": "彩虹鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 1,
+                    "ratio_in_node": 1.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 3,
+                "left_position": 0.7266666666666667,
+                "right_position": 0.7333333333333334,
+                "width": 0.006666666666666667,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 1
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 1.0,
+                        "sub_top": 1.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    }
+                ],
+                "y_reg": {},
+                "condition": "萼片宽度cm∈(3,+∞)",
+                "all_condition": "【花瓣宽度cm∈(1.7,+∞)】&【花瓣长度cm∈(-∞,4.9]】&【萼片宽度cm∈(3,+∞)】"
+            }
+        },
+        "10": {
+            "id": "10",
+            "level": 2,
+            "pid": "4",
+            "pid_list": [
+                "0",
+                "4"
+            ],
+            "cid_list": [],
+            "reg_info": {},
+            "node_stats": {},
+            "node_count": 40,
+            "node_ratio_in_all": 0.26666666666666666,
+            "node_score": "维吉尼亚鸢尾",
+            "score_distribution": [
+                {
+                    "value": "山鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "彩虹鸢尾",
+                    "count": 0,
+                    "ratio_in_node": 0.0
+                },
+                {
+                    "value": "维吉尼亚鸢尾",
+                    "count": 40,
+                    "ratio_in_node": 1.0
+                }
+            ],
+            "plot_info": {
+                "is_classification": 0,
+                "bottom": 2,
+                "left_position": 0.7333333333333334,
+                "right_position": 1.0,
+                "width": 0.26666666666666666,
+                "y_binary": 0,
+                "y_multi": [
+                    {
+                        "y_class": "山鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "彩虹鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 0.0,
+                        "sub_height": 0.0,
+                        "sub_cnt": 0
+                    },
+                    {
+                        "y_class": "维吉尼亚鸢尾",
+                        "sub_bottom": 0.0,
+                        "sub_top": 1.0,
+                        "sub_height": 1.0,
+                        "sub_cnt": 40
+                    }
+                ],
+                "y_reg": {},
+                "condition": "花瓣长度cm∈(4.9,+∞)",
+                "all_condition": "【花瓣宽度cm∈(1.7,+∞)】&【花瓣长度cm∈(4.9,+∞)】"
+            }
+        }
+    }
+}
