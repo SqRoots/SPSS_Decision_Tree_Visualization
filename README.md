@@ -22,6 +22,8 @@
 
 ## 二、使用示例
 
+💡 提示：无需安装，直接导入程序包即可。
+
 ### 2.1 波士顿房价（回归树）
 
 ```python
@@ -30,11 +32,11 @@ from spss_tree_visualization import extract_and_visualize as et
 
 # 波士顿房价（回归树）
 
-## 导入测试 XML 文件
+# 导入测试 XML 文件
 with open('./data_for_testing/boston_house_prices.xml', 'r', encoding='utf-8') as fo:
     xml_c = fo.read()
 
-## 提取决策树信息，并设置标题和颜色
+# 提取决策树信息，并设置标题和颜色
 e = et.Extract(
     xml_data=xml_c,
     title='SPSS决策树可视化示例 - 波士顿房价',
@@ -43,9 +45,9 @@ e = et.Extract(
     color_1='#0077b6'   # 默认值 #0077b6
 )
 
-## 导出决策树信息至 JSON 文件
+# 导出决策树信息至 JSON 文件
 e.save_json('data_for_testing/boston_house_prices__output.json')
-## 导出可视化结果至 HTML 文件
+# 导出可视化结果至 HTML 文件
 e.save_html('data_for_testing/boston_house_prices__output.html')
 ```
 
@@ -57,11 +59,11 @@ from spss_tree_visualization import extract_and_visualize as et
 
 # 鸢尾花（分类树）
 
-## 导入测试 XML 文件
+# 导入测试 XML 文件
 with open('./data_for_testing/iris.xml', 'r', encoding='utf-8') as fo:
     xml_b = fo.read()
 
-## 提取决策树信息，并设置标题和颜色
+# 提取决策树信息，并设置标题和颜色
 e = et.Extract(
     xml_data=xml_b,
     title='SPSS决策树可视化示例-鸢尾花分类',
@@ -70,9 +72,9 @@ e = et.Extract(
     color_1='#1d3557'   # 默认值 #0077b6
 )
 
-## 导出决策树信息至 JSON 文件
+# 导出决策树信息至 JSON 文件
 e.save_json('data_for_testing/iris__output.json')
-## 导出可视化结果至 HTML 文件
+# 导出可视化结果至 HTML 文件
 e.save_html('data_for_testing/iris__output.html')
 ```
 
