@@ -23,6 +23,36 @@ def plot(
     with open(os.path.join(os.path.split(os.path.realpath(__file__))[0], 'template.html'), 'r', encoding='utf-8') as fo:
         _template = fo.read()
 
+    # 对于二分类结果调整顺序（按 $.plot_info.y_binary 排序）
+    if data.get('y_class_cnt') == 2:
+        # 层数
+        _level = 1
+        # 用于存储排序后的节点信息
+        _node_info = {'0': data.get('node_info').get('0')}
+        while True:
+            # 按层取节点列表
+            _node_list = [(k, v) for k, v in data.get('node_info').items() if v.get('level') == _level]
+            if len(_node_list) == 0:
+                break
+            # 层内 pid 列表
+            _pid_list = set([_[1].get('pid') for _ in _node_list])
+            # 遍历 pid
+            for pid in list(_pid_list):
+                _same_pid_node_list = [_ for _ in _node_list if _[1].get('pid') == pid]
+                _same_pid_node_list.sort(key=lambda x: x[1].get('plot_info').get('y_binary'))
+                _same_pid_node_list[0][1]['plot_info']['left_position'] = _node_info.get(pid).get('plot_info').get('left_position')
+                _node_info.update({
+                    _same_pid_node_list[0][0]: _same_pid_node_list[0][1]
+                })
+                # 遍历 pid 对应子节点列表
+                for i in range(1, len(_same_pid_node_list)):
+                    _same_pid_node_list[i][1]['plot_info']['left_position'] = _same_pid_node_list[i - 1][1]['plot_info']['left_position'] + _same_pid_node_list[i - 1][1]['plot_info']['width']
+                    # 更新 _node_info
+                    _node_info.update({
+                        _same_pid_node_list[i][0]: _same_pid_node_list[i][1]
+                    })
+            _level += 1
+
     # 压缩 JSON 数据为字符串
     _data = {}
     for k, v in data['node_info'].items():
