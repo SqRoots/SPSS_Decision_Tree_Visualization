@@ -54,8 +54,8 @@ def node_predicate(compound_predicate) -> str:
         _c2_value = [_.get('value', '') for _ in _sp]
 
         # 分类变量
-        if _c2_o[0] == '=':
-            return _c2_field[0] + '∈{' + '|'.join(_c2_value) + '}'
+        if _c2_o[0] == '=' or _c2_o[0] == '=缺失':
+            return _c2_field[0] + '∈{' + '|'.join([_ if _ else '缺失' for _ in _c2_value]) + '}'
         # 连续变量，1个判断
         if len(_c2_o) == 1:
             if _c2_o[0] == '>':
