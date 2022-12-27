@@ -21,6 +21,7 @@
       top:280px;
       left:50%;
       margin-left:-550px;
+	  z-index:2;
     }
     .node_info_mouse{
       visibility:hidden;
@@ -48,6 +49,7 @@
 </head>
 
 <body style="text-align:center;">
+<div style="height:1000px;text-align:center;">
   <h1>{{title}}</h1>
   <h3>{{sub_title}}</h3>
 
@@ -69,7 +71,8 @@
   <br>
   <div id="saved_node_info" class="saved_node_info"></div>
   <br>
-  <p style="position: absolute;top:95%;right:2%">项目地址：<a href="https://github.com/SqRoots/SPSS_Decision_Tree_Visualization" target="_blank">SPSS Decision Tree Visualization</a></p>
+  <p style="position: absolute;top:95%;right:2%;z-index:0;">项目地址：<a href="https://github.com/SqRoots/SPSS_Decision_Tree_Visualization" target="_blank">SPSS Decision Tree Visualization</a></p>
+<div style="height:1000px;text-align:center;">
 </body>
 <script>
   let data = {{data}}
